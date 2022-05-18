@@ -23,7 +23,7 @@ def on_close(ws):
 def start_websocket():
     global ws
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("ws://172.18.30.90:9000",
+    ws = websocket.WebSocketApp("ws://172.18.30.121:9000",
                                 on_message=on_message,
                                 on_error=on_error,
                                 on_close=on_close)
